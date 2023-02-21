@@ -13,3 +13,9 @@ Site produzido utilizando templates padrões, blocos de código, variáveis, loo
 <img src="https://github.com/BWartchow/Hogwarts/blob/main/tela03.png">
 
 <img src="https://github.com/BWartchow/Hogwarts/blob/main/tela04.png">
+
+<img src="https://github.com/BWartchow/Hogwarts/blob/main/tela05.png">
+
+<img src="https://github.com/BWartchow/Hogwarts/blob/main/tela06.png">
+
+<img src="https://github.com/BWartchow/Hogwarts/blob/main/tela07.png">
