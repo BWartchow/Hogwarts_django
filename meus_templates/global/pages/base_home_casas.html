@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}Hogwarts{% endblock titulo%}</title>
+    <link rel="stylesheet" href="{% static 'global/css/castelo.css' %}">
+    <link rel="stylesheet" href="{% static 'global/css/home-styles.css' %}"> {% block css_casa %}{% endblock css_casa %}
+</head>
+
+<body>
+    <header>
+        <!-- NAVBAR - MENU -->
+        <nav class="navbar">
+            <ul>
+                <li><a class="nav-item" id="grif" href="{% url 'grifinoria:salao_comunal' %}">Grifinória</a></li>
+                <li><a class="nav-item" id="sons" href="{% url 'sonserina:salao_comunal' %}">Sonserina</a></li>
+                <li> {% block img-botao %}<a class="nav-item" href="{% url 'castelo:home' %}"> <img id="logo" src="{% static '/global/imgs/global/hogwarts.png' %}" alt="Hogwarts"> </a>{% endblock img-botao %} </li>
+                <li><a class="nav-item" id="corv" href="{% url 'corvinal:salao_comunal' %}">Corvinal</a></li>
+                <li><a class="nav-item" id="lufa" href="{% url 'lufalufa:salao_comunal' %}">Lufa-Lufa</a></li>
+            </ul>
+        </nav>
+    </header> {% block menu_casa%}{% endblock menu_casa %} {% block main %}{% endblock main %} <footer>
+        <div class="footer-links container">
+            <div class="icon"> {% block cor_logo %}<img src="{% static '/global/imgs/global/logo-hp-yellow.png' %}" alt="Harry Potter">{% endblock cor_logo %} </div>
+            <div class="row">
+                <h3>Desenvolvimento</h3>
+                <p><a href="https://github.com/BWartchow" target="_blank">Autor: Bê Wartchow</a></p>
+                <p><a href="https://github.com/gutohertzog" target="_blank">Professor: Augusto Hertzog</a></p>
+                <p><a href="https://senacprogramarsti.com.br/" target="_blank">Escola de Magia e Tecnologia Senac Tech Porto Alegre</a></p>
+            </div>
+        </div>
+        <div class="research-source"> Base do design: <a href="https://github.com/micheleambrosio/harry-potter-css-course" target="_blank">Harry Potter CSS Course</a>
+        </div>
+    </footer>
+</body>
+
+</html>

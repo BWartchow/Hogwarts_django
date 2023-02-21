@@ -1,0 +1,28 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Sobre{% endblock titulo%} {% block css_casa %} {% load static %}
+<link rel="stylesheet" href="{% static 'sonserina/css/sonserina.css' %}"> {% endblock css_casa %} {% block menu_casa%} {% include 'sonserina/partials/menu-sonserina.html' %} {% endblock menu_casa %} {% block main %} {% load static %} <main class="green">
+    <!-- SECTION SELECTOR HAT QUOTE -->
+    <section class="section container" id="selector-hat-quote">
+        <p>"Ou quem sabe a Sonserina será a sua casa, e ali fará seus verdadeiros amigos; Homens de <b>astúcia</b>, que usam <b>quaisquer meios</b> para <b>atingir os fins</b> que antes colimaram." - o chapéu seletor</p>
+    </section>
+    <div id="titulo-sobre">
+        <h2>Características da Casa</h2>
+    </div>
+    <!-- SECTION HOUSE FEATURES -->
+    <section class="section container" id="section-house-features">
+        <p class="description">A casa Sonserina, ou também conhecida como Slytherin, foi fundada por Salazar Slytherin e possui as cores verde e prata. A casa Sonserina possui as seguintes características:</p>
+        <div class="house-features-container">
+            <div class="card">
+                <span class="feature">Elemento:</span>
+                <span class="feature-value">Água</span>
+            </div>
+            <div class="card" id="ghost">
+                <span class="feature">Fantasma:</span>
+                <span class="feature-value">Barão Sangrento</span>
+            </div>
+            <div class="card">
+                <span class="feature">Animal:</span>
+                <span class="feature-value">Serpente</span>
+            </div>
+        </div>
+    </section>
+</main>{% endblock main %} {% block cor_logo %}<img src="{% static '/global/imgs/sonserina/logo-hp-green.png' %}" alt="Harry Potter">{% endblock cor_logo %}

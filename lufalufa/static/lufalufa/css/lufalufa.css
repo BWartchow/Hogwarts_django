@@ -1,0 +1,84 @@
+.yellow {
+    background-color: rgb(129, 130, 60);
+    color: black;
+}
+
+#title-grif {
+    display: flex;
+    justify-content: center;
+}
+
+.brasao {
+    position: relative;
+    left: 40%
+}
+
+aside {
+    position: absolute;
+    left: 0;
+    height: 500px;
+    width: 180px;
+    padding: 20px;
+    background-color: #121315;
+}
+
+aside a {
+    font-family: 'Harry Potter', fantasy;
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#menu-lufalufa a:hover {
+    color: yellow;
+}
+
+#selector-hat-quote {
+    position: absolute;
+    left: 50%;
+    max-width: 49%;
+    line-height: 1.5rem;
+    text-align: right;
+}
+
+
+#titulo-sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    line-height: 1.5rem;
+    justify-content: center;
+    position: relative;
+    left: 20%;
+    max-width: 500px;
+}
+
+
+#section-house-features .house-features-container {
+    text-align: center;
+    max-width: 900px;
+    position: relative;
+    left: 20%;
+}
+
+#section-house-features .house-features-container .card {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#section-house-features .house-features-container .card .feature {
+    font-family: Cinzel, serif;
+    color: #F2CD1E;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-right: 8px;
+}

@@ -1,0 +1,81 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Casas{% endblock titulo%}{% block main %} {% load static %} <main>
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider container">
+        <div class="section-divider-border"></div>
+        <img src="{% static '/global/imgs/global/harry-potter-icon.png' %}" class="divider-icon">
+        <div class="section-divider-border"></div>
+    </div>
+    <div class="section-image">
+        <img id="salao" src="{% static '/global/imgs/global/salao.jpg' %}" alt="welcome">
+    </div>
+    <!-- SECTION: HOUSES -->
+    <section class="section container" id="section-houses">
+        <p> Os estudantes de magia e bruxaria da franquia Harry Potter, universo criado por J.K. Rowling, são divididos em quatro grupos bem distintos, as quatro casas de Hogwarts. Elas são: </p>
+        <div class="infos">
+            <h2>Casas de Hogwards</h2>
+            <div class="title-divider-vertical"></div>
+            <div class="houses">
+                <!-- Grifinória -->
+                <div class="card" id="grifinoria">
+                    <div class="card-info">
+                        <h3>Grifinória</h3>
+                        <img src="{% static '/global/imgs/grifinoria/brasao.png' %}" alt="Grifinória">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quis deserunt facere obcaecati rem sed id, reprehenderit repellat, aut ea accusamus ipsam voluptate praesentium vero exercitationem! Iure impedit quae placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum iusto harum illo, ipsa deserunt blanditiis eveniet eaque maiores sit maxime ducimus quidem minus nihil unde, ipsam, quo tempora ea!</p>
+                        <a href="">
+                            <div class="button-wrapper">
+                                <div class="button-detail button-detail-left"></div>
+                                <button><a href="{% url 'grifinoria:salao_comunal' %}" style="color: white;"><span>Ver Casa</span></a></button>
+                                <div class="button-detail button-detail-right"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Sonserina -->
+                <div class="card" id="sonserina">
+                    <div class="card-info">
+                        <h3>Sonserina</h3>
+                        <img src="{% static '/global/imgs/sonserina/brasao.png' %}" alt="Sonserina">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quis deserunt facere obcaecati rem sed id, reprehenderit repellat, aut ea accusamus ipsam voluptate praesentium vero exercitationem! Iure impedit quae placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum iusto harum illo, ipsa deserunt blanditiis eveniet eaque maiores sit maxime ducimus quidem minus nihil unde, ipsam, quo tempora ea!</p>
+                        <a href="}">
+                            <div class="button-wrapper">
+                                <div class="button-detail button-detail-left"></div>
+                                <button><a href="{% url 'sonserina:salao_comunal' %}" style="color: white;"><span>Ver Casa</span></a></button>
+                                <div class="button-detail button-detail-right"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Corvinal -->
+                <div class="card" id="corvinal">
+                    <div class="card-info">
+                        <h3>Corvinal</h3>
+                        <img src="{% static '/global/imgs/corvinal/brasao.png' %}" alt="Corvinal">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quis deserunt facere obcaecati rem sed id, reprehenderit repellat, aut ea accusamus ipsam voluptate praesentium vero exercitationem! Iure impedit quae placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum iusto harum illo, ipsa deserunt blanditiis eveniet eaque maiores sit maxime ducimus quidem minus nihil unde, ipsam, quo tempora ea!</p>
+                        <a href="">
+                            <div class="button-wrapper">
+                                <div class="button-detail button-detail-left"></div>
+                                <button><a href="{% url 'corvinal:salao_comunal' %}" style="color: white;"><span>Ver Casa</span></a></button>
+                                <div class="button-detail button-detail-right"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Lufa-Lufa -->
+                <div class="card" id="lufa-lufa">
+                    <div class="card-info">
+                        <h3>Lufa-Lufa</h3>
+                        <img src="{% static '/global/imgs/lufalufa/brasao.png' %}" alt="Lufa-Lufa">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quis deserunt facere obcaecati rem sed id, reprehenderit repellat, aut ea accusamus ipsam voluptate praesentium vero exercitationem! Iure impedit quae placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorum iusto harum illo, ipsa deserunt blanditiis eveniet eaque maiores sit maxime ducimus quidem minus nihil unde, ipsam, quo tempora ea!</p>
+                        <a href="">
+                            <div class="button-wrapper">
+                                <div class="button-detail button-detail-left"></div>
+                                <button><a href="{% url 'lufalufa:salao_comunal' %}" style="color: white;"><span>Ver Casa</span></a></button>
+                                <div class="button-detail button-detail-right"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main> {% endblock main %}

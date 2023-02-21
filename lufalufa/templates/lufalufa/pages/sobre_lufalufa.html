@@ -1,0 +1,28 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Sobre{% endblock titulo%} {% block css_casa %} {% load static %}
+<link rel="stylesheet" href="{% static 'lufalufa/css/lufalufa.css' %}"> {% endblock css_casa %} {% block menu_casa%} {% include 'lufalufa/partials/menu-lufalufa.html' %} {% endblock menu_casa %} {% block main %} {% load static %} <main class="yellow">
+    <!-- SECTION SELECTOR HAT QUOTE -->
+    <section class="section container" id="selector-hat-quote">
+        <p>"Quem sabe é na Lufa-Lufa que você vai morar, Onde seus moradores são <b>justos</b> e <b>leais</b>, <b>pacientes e sinceros, sem medo</b> da dor." - o chapéu seletor</p>
+    </section>
+    <div id="titulo-sobre">
+        <h2>Características da Casa</h2>
+    </div>
+    <!-- SECTION HOUSE FEATURES -->
+    <section class="section container" id="section-house-features">
+        <p class="description">A casa Lufa-Lufa, ou também conhecida como Hufflepuff, foi fundada por Helga Hufflepuff e possui as cores amarelo e preto. A casa Lufa-Lufa possui as seguintes características:</p>
+        <div class="house-features-container">
+            <div class="card">
+                <span class="feature">Elemento:</span>
+                <span class="feature-value">Terra</span>
+            </div>
+            <div class="card" id="ghost">
+                <span class="feature">Fantasma:</span>
+                <span class="feature-value">Frei Gorducho</span>
+            </div>
+            <div class="card">
+                <span class="feature">Animal:</span>
+                <span class="feature-value">Texugo</span>
+            </div>
+        </div>
+    </section>
+</main>{% endblock main %}

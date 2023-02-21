@@ -1,0 +1,66 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block img-botao %}{% load static %} <a class="nav-item" href="{% url 'castelo:casas' %}"><img id="logo" src="{% static '/global/imgs/global/selector-hat.png' %}" alt="Hogwarts"></a> {% endblock img-botao %} {% block main %} {% load static %} <main>
+  <dv>
+    <div class="button-wrapper">
+      <div class="button-detail button-detail-left"></div>
+      <button id="botao">
+        <span><a href="{% url 'castelo:casas' %}">Bem vindo à</a></span>
+      </button>
+      <div class="button-detail button-detail-right"></div>
+    </div>
+    <section class="section container" id="section-hogwards">
+      <h2>Hogwards</h2>
+    </section>
+  </dv>
+  <div class="section-image">
+    <img id="welcome" src="{% static '/global/imgs/global/welcome.png' %}" alt="welcome">
+  </div>
+  <!-- SECTION DIVIDER -->
+  <div class="section-divider container">
+    <div class="section-divider-border"></div>
+    <img src="{% static '/global/imgs/global/harry-potter-icon.png' %}" class="divider-icon">
+    <div class="section-divider-border"></div>
+  </div>
+  <!-- SECTION: BOOKS -->
+  <section class="section container" id="section-books">
+    <h2>Livros da Franquia</h2>
+    <p> A ordem oficial para leitura dos livros não contém muito segredo, porque ela vai de acordo com os títulos lançados. O primeiro livro estreou em 1997 e desde então, o sucesso de Harry Potter só aumentou. </p>
+    <table>
+      <thead>
+        <tr>
+          <th class="align-left">Livro</th>
+          <th class="align-right">Ano</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="align-left">Harry Potter e a Pedra Filosofal</td>
+          <td class="align-right">1997</td>
+        </tr>
+        <tr>
+          <td class="align-left">Harry Potter e a Câmara Secreta</td>
+          <td class="align-right">1998</td>
+        </tr>
+        <tr>
+          <td class="align-left">Harry Potter e o Prisioneiro de Azkaban</td>
+          <td class="align-right">1999</td>
+        </tr>
+        <tr>
+          <td class="align-left">Harry Potter e o Cálice de Fogo</td>
+          <td class="align-right">2000</td>
+        </tr>
+        <tr>
+          <td class="align-left">Harry Potter e a Ordem da Fênix</td>
+          <td class="align-right">2003</td>
+        </tr>
+        <tr>
+          <td class="align-left">Harry Potter e o Enigma do Príncipe</td>
+          <td class="align-right">2005</td>
+        </tr>
+        <tr>
+          <td class="align-left">Harry Potter e as Relíquias da Morte</td>
+          <td class="align-right">2007</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main> {% endblock main %}

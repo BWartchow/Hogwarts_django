@@ -1,0 +1,16 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Quadribol{% endblock titulo%} {% block css_casa %}{% load static %}
+<link rel="stylesheet" href="{% static 'corvinal/css/corvinal.css' %}"> {% endblock css_casa %} {% block menu_casa%} {% include 'corvinal/partials/menu-corvinal.html' %} {% endblock menu_casa %} {% block main %} {% load static %} <main class="blue">
+    <h2 id="title-grif">Vitórias no Quadribol</h2>
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider container">
+        <div class="section-divider-border" style="margin-left: 40px;"></div>
+        <img src="{% static '/global/imgs/global/pomo.png' %}" class="divider-icon">
+        <div class="section-divider-border"></div>
+    </div>
+    <div class="section-image">
+        <img style="width: 20%; margin-left: 300px;" src="{% static '/global/imgs/global/vitoria.png' %}" alt="vitoria">
+    </div>
+    <ul style="position: absolute; left: 600px; top: 30%;">
+        <li>Ano - Jogo:</li> {% for vitoria in trofeus %} <li><a style="color: white;" href="quadribol/trofeu/{{vitoria.ano}}">{{vitoria.ano}} - {{vitoria.jogo}}</a></li> {% endfor %}
+    </ul>
+</main> {% endblock main %} {% block cor_logo %}<img src="{% static '/global/imgs/corvinal/logo-hp-blue.png' %}" alt="Harry Potter">{% endblock cor_logo %}

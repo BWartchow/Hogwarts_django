@@ -1,0 +1,28 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Sobre{% endblock titulo%} {% block css_casa %} {% load static %}
+<link rel="stylesheet" href="{% static 'corvinal/css/corvinal.css' %}"> {% endblock css_casa %} {% block menu_casa%} {% include 'corvinal/partials/menu-corvinal.html' %} {% endblock menu_casa %} {% block main %} {% load static %} <main class="blue">
+    <!-- SECTION SELECTOR HAT QUOTE -->
+    <section class="section container" id="selector-hat-quote">
+        <p>"Ou será a velha e sábia Corvinal; A casa dos que têm a mente sempre <b>alerta</b>, onde os homens de <b>grande espírito e saber</b> sempre encontrarão <b>companheiros</b> seus iguais." - o chapéu seletor</p>
+    </section>
+    <div id="titulo-sobre">
+        <h2>Características da Casa</h2>
+    </div>
+    <!-- SECTION HOUSE FEATURES -->
+    <section class="section container" id="section-house-features">
+        <p class="description">A casa Corvinal, ou também conhecida como Ravenclaw, foi fundada por Rowena Ravenclaw e possui as cores azul e bronze. A casa Corvinal possui as seguintes características:</p>
+        <div class="house-features-container">
+            <div class="card">
+                <span class="feature">Elemento:</span>
+                <span class="feature-value">Ar</span>
+            </div>
+            <div class="card" id="ghost">
+                <span class="feature">Fantasma:</span>
+                <span class="feature-value">Dama Cinzenta</span>
+            </div>
+            <div class="card">
+                <span class="feature">Animal:</span>
+                <span class="feature-value">Águia</span>
+            </div>
+        </div>
+    </section>
+</main>{% endblock main %} {% block cor_logo %}<img src="{% static '/global/imgs/corvinal/logo-hp-blue.png' %}" alt="Harry Potter">{% endblock cor_logo %}

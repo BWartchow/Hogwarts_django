@@ -1,0 +1,28 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Sobre{% endblock titulo%} {% block css_casa %} {% load static %}
+<link rel="stylesheet" href="{% static 'grifinoria/css/grifinoria.css' %}"> {% endblock css_casa %} {% block menu_casa%} {% include 'grifinoria/partials/menu-grifinoria.html' %} {% endblock menu_casa %} {% block main %} {% load static %} <main class="red">
+    <!-- SECTION SELECTOR HAT QUOTE -->
+    <section class="section container" id="selector-hat-quote">
+        <p>"Quem sabe sua morada é Grifinória; Casa onde habitam os corações indômitos; <b>Ousadia</b>, <b>sangue-frio</b> e <b>nobreza</b> destacam os alunos da casa Grifinória dos demais." - o chapéu seletor</p>
+    </section>
+    <div id="titulo-sobre">
+        <h2>Características da Casa</h2>
+    </div>
+    <!-- SECTION HOUSE FEATURES -->
+    <section class="section container" id="section-house-features">
+        <p class="description">A casa Grifinória, ou também conhecida como Gryffindor, foi fundada por Godrico Gryffindor e possui as cores vermelho e dourado. A casa Grifinória possui as seguintes características:</p>
+        <div class="house-features-container">
+            <div class="card">
+                <span class="feature">Elemento:</span>
+                <span class="feature-value">Fogo</span>
+            </div>
+            <div class="card" id="ghost">
+                <span class="feature">Fantasma:</span>
+                <span class="feature-value">Nick Quase Sem Cabeça</span>
+            </div>
+            <div class="card">
+                <span class="feature">Animal:</span>
+                <span class="feature-value">Leão</span>
+            </div>
+        </div>
+    </section>
+</main>{% endblock main %} {% block cor_logo %}<img src="{% static '/global/imgs/grifinoria/logo-hp-red.png' %}" alt="Harry Potter">{% endblock cor_logo %}

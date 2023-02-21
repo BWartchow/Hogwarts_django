@@ -1,0 +1,20 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Membros{% endblock titulo%} {% block css_casa %} {% load static %}
+<link rel="stylesheet" href="{% static 'corvinal/css/corvinal.css' %}"> {% endblock css_casa %} {% block menu_casa%} {% include 'corvinal/partials/menu-corvinal.html' %} {% endblock menu_casa %} {% block main %} {% load static %} <main class="blue">
+    <!-- SECTION MEMBERS -->
+    <section>
+        <h2 id="section-house-members" style="margin-left: 300px;">Principais Membros</h2>
+        <p id="membros" style="margin-left: 300px;">Os principais membros da casa Corvinal são:</p>
+        <img id="harry" style="border-radius: 50%; margin-left: 300px; width: 300px; height: 170px;" src="{% static 'corvinal/imgs/member_ravenclaw_01.jpg' %}" alt="Luna Lovegood">
+        <img id="hermione" style="border-radius: 50%; width: 300px;" src="{% static 'corvinal/imgs/member_ravenclaw_02.jpg' %}" alt="Cho Chang">
+        <img id="rony" style="border-radius: 50%; width: 300px;" src="{% static 'corvinal/imgs/member_ravenclaw_03.jpg' %}" alt="Sibila Trelawney">
+        <div class="actions">
+            <div class="button-wrapper">
+                <div class="button-detail button-detail-left"></div>
+                <button style="margin-left: 400px;">
+                    <span>Luna Lovegood & Cho Chang & Sibila Trelawney</span>
+                </button>
+                <div class="button-detail button-detail-right"></div>
+            </div>
+        </div>
+    </section>
+</main> {% endblock main %} {% block cor_logo %}<img src="{% static '/global/imgs/corvinal/logo-hp-green.png' %}" alt="Harry Potter">{% endblock cor_logo %}

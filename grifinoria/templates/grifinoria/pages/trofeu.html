@@ -1,0 +1,17 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Quadribol{% endblock titulo%} {% block css_casa %}{% load static %}
+<link rel="stylesheet" href="{% static 'grifinoria/css/grifinoria.css' %}"> {% endblock css_casa %} {% block menu_casa%} {% include 'grifinoria/partials/menu-grifinoria.html' %} {% endblock menu_casa %} {% block main %} {% load static %} <main class="red">
+    <h2 id="title-grif" style="position: relative; left: 100px">Detalhes da Vitória da Grifinória:</h2>
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider container">
+        <div class="section-divider-border" style="margin-left: 40px;"></div>
+        <img src="{% static '/global/imgs/global/pomo.png' %}" class="divider-icon">
+        <div class="section-divider-border"></div>
+    </div>
+    <div class="section-image">
+        <ul>
+            <li style="position: relative; left: 300px;">{{vitoria.ano}} - {{vitoria.jogo}}</li>
+            <li style="position: relative; left: 300px; padding-bottom: 10px;">{{vitoria.descricao}}</li>
+            <li><img style="width: 15%; position: relative; left: 50%" src={{vitoria.foto}}></li>
+        </ul>
+    </div>
+</main> {% endblock main %} {% block cor_logo %}<img src="{% static '/global/imgs/grifinoria/logo-hp-red.png' %}" alt="Harry Potter">{% endblock cor_logo %}

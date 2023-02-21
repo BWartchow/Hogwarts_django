@@ -1,0 +1,14 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Grifinória{% endblock titulo%} {% block css_casa %}{% load static %}
+<link rel="stylesheet" href="{% static 'grifinoria/css/grifinoria.css' %}"> {% endblock css_casa %} {% block menu_casa%} {% include 'grifinoria/partials/menu-grifinoria.html' %} {% endblock menu_casa %} {% block main %} {% load static %} <main class="red">
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider container">
+        <div class="section-divider-border"></div>
+        <img src="{% static '/global/imgs/global/harry-potter-icon.png' %}" class="divider-icon">
+        <div class="section-divider-border"></div>
+    </div>
+    <div class="section-image">
+        <h2 id="title-grif">Grifinória</h2>
+        <img class="brasao" src="{% static '/global/imgs/grifinoria/brasao.png' %}" alt="brasao">
+    </div>
+    </div>
+</main> {% endblock main %} {% block cor_logo %}<img src="{% static '/global/imgs/grifinoria/logo-hp-red.png' %}" alt="Harry Potter">{% endblock cor_logo %}

@@ -1,0 +1,14 @@
+{% extends 'global/pages/base_home_casas.html' %} {% block titulo %}Sonserina{% endblock titulo%} {% block css_casa %}{% load static %}
+<link rel="stylesheet" href="{% static 'sonserina/css/sonserina.css' %}"> {% endblock css_casa %} {% block menu_casa%} {% include 'sonserina/partials/menu-sonserina.html' %} {% endblock menu_casa %} {% block main %} {% load static %} <main class="green">
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider container">
+        <div class="section-divider-border"></div>
+        <img src="{% static '/global/imgs/global/harry-potter-icon.png' %}" class="divider-icon" style="margin-left: 50px;">
+        <div class="section-divider-border"></div>
+    </div>
+    <div class="section-image">
+        <h2 id="title-grif">Sonserina</h2>
+        <img class="brasao" src="{% static '/global/imgs/sonserina/brasao.png' %}" style="height: 300px;" alt="brasao">
+    </div>
+    </div>
+</main> {% endblock main %} {% block cor_logo %}<img src="{% static '/global/imgs/sonserina/logo-hp-green.png' %}" alt="Harry Potter">{% endblock cor_logo %}
